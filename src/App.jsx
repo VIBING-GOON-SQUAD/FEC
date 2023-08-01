@@ -12,7 +12,7 @@ import "./Navbar.css";
 import "./Gamearea.css";
 import "./App.css";
 import "./components/GameBodyFolder/GameBody.css";
-
+import "./components/ReviewGraph/GraphForReviews.css";
 function App() {
   return (
     <div>

@@ -66,7 +66,6 @@ const ReviewDateRange = ({ toggleExpanded, expanded, fullData, filters, setFilte
 
         </div>
       </div>
-    </div>
   );
 };
 
