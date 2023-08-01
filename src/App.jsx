@@ -35,7 +35,6 @@ function App() {
           <GameArea />
         </div>
         <GamerJuice />
-
         <div className='clear'></div>
     <DataProvider>
         <div className='review-graph-area'>
