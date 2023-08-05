@@ -13,12 +13,14 @@ const Dropdown = ({ submenus, i }) => {
 
   if (i === 2) {
     return (
-      <ul className='categories' style={{ display: "flex", flex: "column" }}>
+      <ul
+        className="categories"
+        style={{ display: "flex", flex: "column" }}
+      >
         {submenus.map((submenu, index) => (
           <li
-            data-testid='item'
             key={index}
-            className='dropdown-item'
+            className="dropdown-item"
             style={{ listStyleType: "none" }}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
@@ -34,7 +36,7 @@ const Dropdown = ({ submenus, i }) => {
             {activeSubmenu === index &&
               submenu.dropdownItems &&
               submenu.dropdownItems.length > 0 && (
-                <ul className='submenu'>
+                <ul className="submenu">
                   {submenu.dropdownItems.map((item, i) => (
                     <li key={i}>
                       <a href={item.url}>{item.title}</a>

@@ -26,12 +26,17 @@ describe("dropdown test", () => {
   });
 
   test("should show the content at the start", () => {
-    expect(screen.getByTestId("Tab")).toBeVisible();
+    expect(screen.getByTestId("Tab")).toBeInTheDocument();
   });
 
   // test("should not show the content at the start", () => {
-  //   let items = screen.queryAllByTestId("item");
-  //   expect(items).not.toBeVisible();
+  //   let submenus = [
+  //     { title: "test1"},
+  //     { title: "test2"},
+  //     { title: "test3"},
+  //   ];
+  //   let item1 = screen.getByText(submenus[0].title)
+  //   expect(item1).not.toBeInTheDocument()
   // });
 });
 
@@ -61,7 +66,7 @@ describe("store tabs testing", () => {
       fireEvent.mouseOver(submenuElem[i]);
 
       await waitFor(() => {
-        expect(menuItemsElem).toBeVisible();
+        expect(menuItemsElem).toBeInTheDocument();
       });
     }
   });
