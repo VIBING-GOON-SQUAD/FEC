@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #171d25;
+  margin: 0;
+  color: #acb2b8;
+  font-family: "Motiva Sans", "Twemoji", "Noto Sans", Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+:root {
+  display: flex;
+  align-items: center;
+}
+
+.game_body {
+  width: 940px;
+  display: flex;
+  font-size: 14px;
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: normal;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.game-bgd {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: #1b2838;
+  width: 100vw;
+  align-items: center;
+  background-image: url(https://cdn.akamai.steamstatic.com/steam/apps/2433830/page_bg_generated_v6b.jpg?t=1686899598);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.game-area-bgd {
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 940px;
+  /* width: 100vw; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+/* 
+.game_area_container {
+  width: 100%;
+} */
+
+.footer-area {
+  display: flex;
+  bottom: 0;
+  position: relative;
+  flex-direction: column;
+  height: 290px;
+  background-color: #1b2838;
+  place-content: end;
+  width: 100%;
+}
+
+.footer {
+  background-color: #171d25;
+  height: 184px;
+  padding-top: 16px;
+  padding-bottom: 60px;
+  width: 100%;
+}
+
+.store_nav_bar {
+  background: linear-gradient(
+    90deg,
+    #3c6592 11.5%,
+    #33699d 25.5%,
+    #0f216e 100%
+  );
+  width: 940px;
+  height: 35px;
+  align-self: center;
+}
+
+.review_item {
+  background-color: black;
+  width: 616px;
+  height: 310px;
+  margin-bottom: 26px;
+}
+
+.clear {
+  clear: both;
+  height: 1px;
+  background-color: black;
+  margin-top: 1rem;
+  width: 100vw;
+}
